@@ -308,7 +308,7 @@ extended_protein_weight_ranges, avg_extended_protein_weights = _make_ambiguous_r
 
 
 # For Center of Mass Calculation.
-# Taken from http://www.chem.qmul.ac.uk/iupac/AtWt/ & PyMol
+# Taken from https://www.qmul.ac.uk/sbcs/iupac/AtWt/ & PyMol
 atom_weights = {
     "H": 1.00794,
     "D": 2.01410,
