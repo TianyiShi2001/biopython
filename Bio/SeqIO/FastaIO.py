@@ -208,7 +208,7 @@ def fasta_title_parser_auto(title):
 
     """
     # used by fasta_ncbi_parser()
-    id, long_name, parsed_fields = '', '', []
+    id, long_name, parsed_fields = "", "", []
     if title:
         splitTitle = title.split(" ", 1)
         if len(splitTitle) == 2:
@@ -220,7 +220,9 @@ def fasta_title_parser_auto(title):
             parsed_fields = []
             while i < len(fields):
                 if fields[i] in ncbi_identifiers:
-                    parsed_fields.append(f"{ncbi_identifiers[fields[i]][1]}:{fields[i+1]}")
+                    parsed_fields.append(
+                        f"{ncbi_identifiers[fields[i]][1]}:{fields[i+1]}"
+                    )
                 i += 1
         else:
             long_name = title
